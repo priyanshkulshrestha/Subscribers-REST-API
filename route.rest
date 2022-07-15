@@ -1,0 +1,29 @@
+# You can use this file to check api requests by instlling "REST Client" extension in VS Code 
+# REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.
+
+GET http://localhost:3000/subscribers/
+
+
+###
+GET http://localhost:3000/subscribers/62191c5b7761b68ff46d8111
+
+
+###
+POST http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{
+    "name": "priyansh",
+    "subscribedToChannel": "wds"
+}
+
+###
+DELETE  http://localhost:3000/subscribers/62191c5b7761b68ff46d8111
+
+###
+PATCH  http://localhost:3000/subscribers/6219285656bcade6c8f2308c
+Content-Type: application/json
+
+{
+    "name": "priyansh_kul"
+}
